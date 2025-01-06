@@ -1,40 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SAMADHAN JADHAV</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='css/master.css')}}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="container">
-        <h1><span>D</span>ata <span>A</span>nalyst</h1>
-        <nav>
-          <i class="fas fa-bars toggle-menu"></i>
-          <ul class="sec">
-            <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
-            <li><a href="{{ url_for('projects') }}" class="link">PROJECTS</a></li>
-            <li><a href="{{ url_for('internships') }}" class="link">INTERNSHIPS</a></li>
-            <li><a href="{{ url_for('certifications') }}" class="link">CERTIFICATIONS</a></li>
-            <li><a href="{{ url_for('education') }}" class="link">EDUCATION</a></li>
-            <li><a href="{{ url_for('resume') }}" class="link">RESUME</a></li>
-            <li><a href="{{ url_for('contact') }}" class="link">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samadhan Jadhav - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Samadhan Parshuram Jadhav</h1>
+        <p>Data Analyst | Python Developer | Web Developer</p>
     </header>
-  </body>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated Data Analyst and Python Developer passionate about technology and innovation. 
+                With experience in Python, Django, Flask, SQL, Power BI, and Excel, I thrive in creating efficient 
+                solutions to complex problems. I recently graduated in Computer Science Engineering with an 8.27 CGPA.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming: Python, Flask, Django, SQL</li>
+                <li>Data Visualization: Power BI, Excel</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Data Analysis: Data Cleaning, Reporting, Visualization</li>
+                <li>Tools: Git, Jupyter Notebook</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Driver Drowsiness Detection System</strong> - Developed a real-time system using YOLOv8 to detect drowsy drivers and provide alert alarms.
+                </li>
+                <li>
+                    <strong>Desktop Voice Assistant</strong> - Built using Python to automate tasks and interact with users.
+                </li>
+                <li>
+                    <strong>Hospital Management System</strong> - Designed a web application for efficient data handling in healthcare.
+                </li>
+                <li>
+                    <strong>Sales Performance Analysis</strong> - Created Power BI dashboards to provide actionable insights into sales trends.
+                </li>
+                <li>
+                    <strong>Healthcare Data Analysis</strong> - Analyzed healthcare data trends and visualized patterns using Power BI.
+                </li>
+                <li>
+                    <strong>Portfolio Website</strong> - Built a portfolio using Flask, SQL, HTML, and CSS to showcase my projects.
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>
+                <strong>Bachelor of Engineering (Computer Science)</strong><br>
+                Vidya Pratisthan College of Engineering, Baramati<br>
+                <strong>Graduation Year:</strong> 2024<br>
+                <strong>CGPA:</strong> 8.27
+            </p>
+        </section>
+
+        <section id="internships">
+            <h2>Internships</h2>
+            <ul>
+                <li>
+                    <strong>Data Analyst and Python Developer Intern</strong><br>
+                    Radiant<br>
+                    <strong>Duration:</strong> Ongoing<br>
+                    - Learning Python, Flask, Django, SQL, and Excel to enhance technical skills.
+                </li>
+                <li>
+                    <strong>Web Development Intern</strong><br>
+                    InternPe & Oasis Infobyte<br>
+                    - Developed a calculator, placement drive webpage, and an e-commerce landing page using HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                    <strong>Virtual Internships</strong><br>
+                    - Power BI Job Simulation (PwC)<br>
+                    - Data Analytics and Visualization Job Simulation (Accenture)
+                </li>
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Successfully completed Power BI virtual case experience by PwC Switzerland.</li>
+                <li>Analyzed call center trends, customer retention, and diversity and inclusion through Power BI dashboards.</li>
+                <li>Created actionable insights for business decisions using Power BI and DAX.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Location:</strong> Pune, India</p>
+            <p><strong>Email:</strong> samadhan.jadhav@example.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/yourgithubprofile" target="_blank">github.com/yourgithubprofile</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Samadhan Jadhav. All rights reserved.</p>
+    </footer>
+</body>
 </html>
-
-
-<div class="head" id="home">
-  <div class="container">
-    <div class="overlay"></div>
-    {% block body%} {% endblock%}
-  </div>
-</div>
-
-   
